@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Laboratorio</title>
+    <meta name="author" content="Lucía Balbás" />
+    <meta name="description" content="Práctica de Laboratorio para el curso Full Stack de Samsung Dev Spain" />
+    <!-- Link del css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Formulario de Registro</h1>
+        <div class="registration">
+            <form onsubmit="validateForm(event)">
+                <!-- Nombre -->
+                <div class="form-control">
+                    <label for="">Nombre <span>*</span></label>
+                    <input type="text" name="name" id="name" />
+                    <p></p>
+                </div>
+                <!-- Apellidos -->
+                <div class="form-control">
+                    <label for="">Primer Apellido <span>*</span></label>
+                    <input type="text" name="surname1" id="surname1" />
+                    <p></p>
+                </div>
+                <div class="form-control">
+                    <label for="">Segundo Apellido <span>*</span></label>
+                    <input type="text" name="surname2" id="surname2" />
+                    <p></p>
+                </div>
+                <!-- Email -->
+                <div class="form-control">
+                    <label for="">Email <span>*</span></label>
+                    <input type="email" name="email" id="email" />
+                    <p></p>
+                </div>
+                <!-- Login ???? -->
+                <div class="form-control">
+                    <label for="">Login <span>*</span></label>
+                    <input type="text" name="Login" id="login" class="success">
+                    <p></p>
+                </div>
+                <!-- Contraseña -->
+                <div class="form-control">
+                    <label for="">Contraseña <span>*</span></label>
+                    <input type="password" name="password" id="password" />
+                    <p></p>
+                </div>
+                <!-- Butón enviar -->
+                <div class="boton">
+                    <button type="submit">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- Vincular el Javascript -->
+    <script src="validation.js"></script>
+</body>
+</html>

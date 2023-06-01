@@ -1,0 +1,102 @@
+/* Estilo para la Práctica de Laboratorio - Lucía Balbás */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Poppins&family=Roboto&display=swap');
+/* Estilo universal */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    background: #f6bd60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main */
+main {
+    width: 700px;
+    background: #f7ede2;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #252525;
+    padding: 1em 2.5em;
+    margin: 2.5em 0em;
+}
+
+/* Fonts */
+h1 {
+    font: 2.5em 'Lobster Two', serif;
+    text-align: center;
+    padding: 0.5em 0.5em;
+}
+
+/* Label */
+.form-control label {
+    display: block;
+    font: 1.2em 'Poppins', sans-serif;
+    margin-top: 1em;
+}
+
+.form-control label span {
+    color: #8e0808;
+}
+
+/* Input */
+.form-control input {
+    width: 100%;
+    font: 1em 'Poppins', sans-serif;
+    padding: 0.5em;
+    background: #fcd5ce;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-control.success input {
+    border: 3px solid #008000;
+}
+
+.form-control.error input {
+    border: 3px solid #8e0808;  
+}
+
+.form-control input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 2px #cdcdcd;
+}
+
+.form-control p {
+    font: bold 1em 'Poppins', sans-serif;
+}
+
+/* Button */
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 300px;
+    margin: auto;
+    display: block;
+    padding: 0.5em 1em;
+    font: 1.2em 'Poppins', sans-serif;
+    margin: 1em 0;
+    border: 3px solid #f28482;
+    background: transparent;
+    border-radius: 20px;
+    transition: 0.5s ease-out;
+}
+
+button:hover {
+    background: #f28482;
+    color: #f7ede2;
+    letter-spacing: 3px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 3px 10px #252525;
+}
+
+button:active {
+    transform: translateY(5px);
+}
