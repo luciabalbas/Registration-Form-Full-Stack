@@ -15,7 +15,7 @@
     <main>
         <h1>Formulario de Registro</h1>
         <div class="registration">
-            <form onsubmit="validateForm(event)">
+            <form method="post" action="form.php" autocomplete="off" onsubmit="validateForm(event)">
                 <!-- Nombre -->
                 <div class="form-control">
                     <label for="">Nombre <span>*</span></label>
@@ -39,10 +39,10 @@
                     <input type="email" name="email" id="email" />
                     <p></p>
                 </div>
-                <!-- Login ???? -->
+                <!-- Usuario -->
                 <div class="form-control">
                     <label for="">Login <span>*</span></label>
-                    <input type="text" name="Login" id="login" class="success">
+                    <input type="text" name="login" id="login" />
                     <p></p>
                 </div>
                 <!-- Contraseña -->
@@ -58,7 +58,7 @@
             </form>
         </div>
     </main>
-    <!-- Vincular el Javascript -->
+    <!-- Vinculo del Javascript -->
     <script src="validation.js"></script>
 </body>
 </html>
