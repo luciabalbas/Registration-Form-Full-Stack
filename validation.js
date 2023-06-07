@@ -71,9 +71,6 @@ function validateForm(event) {
     if (sendForm == false) {
         event.preventDefault();
     }
-    else {
-        alert("Done!");
-    }
 }
 
 function success(input) {

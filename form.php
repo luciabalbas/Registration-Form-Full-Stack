@@ -93,7 +93,7 @@
             echo '<button type="button" id="hide" onclick="hideTable()">Ocultar Usuarios</button>';
             echo '</div>';
             // Tabla que mostrará los datos + celdas de cabecera
-            echo '<table id="users"><tr><th>Usuario</th><th>Email</th><th>Nombre</th><th style="width: 30%;">Apellidos</th></tr>';
+            echo '<table id="users"><tr><th>Usuario</th><th style="width: 30%;">Email</th><th>Nombre</th><th style="width: 30%;">Apellidos</th></tr>';
             // Mientras existan datos que imprimir
             while ($row = mysqli_fetch_assoc($querydatos)) {
                 echo '<tr>';

@@ -1,4 +1,7 @@
 /* Estilo para la Práctica de Laboratorio - Lucía Balbás */
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Poppins&display=swap');
+
 /* Estilo universal */
 * {
     margin: 0;
@@ -120,6 +123,10 @@ table#users tr:hover {
     background: #fcd5ce;
 }
 
+table#users th {
+    width: 20%;
+}
+
 table#users td {
     padding: 0.3em;
 }
@@ -129,14 +136,4 @@ table#users td {
     main {
         width: 100%;
     }
-}
-
-/* Fuentes */
-@font-face {
-    font-family: 'Popins';
-    src: url(Fonts/Poppins-Medium.ttf);
-}
-@font-face {
-    font-family: 'Lobster Two';
-    src: url(Fonts/LobsterTwo-Regular.ttf);
 }
